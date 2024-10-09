@@ -15,9 +15,9 @@ class Game {
 	}
 	// metodos da class
 	startGame() {
-		this.nomeJogador = this.getNomeJogador()
-		let numeroSorteMaquina = this.soteiaNumero
-		console.log(numeroSorteMaquina)
+		this.nomeJogador = this.getNomeJogador();
+		let numeroSorteMaquina = this.soteiaNumero;
+		console.log(numeroSorteMaquina);
 		let numeroTentativa = 1;
 		let numeroEscolhaJogador = this.entradaUsuarioNumeroEscolhido();
 		while (numeroEscolhaJogador != numeroSorteMaquina) {
