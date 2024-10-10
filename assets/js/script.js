@@ -1,8 +1,6 @@
 // Jogo adivinha com POO
 alert('Jogo do advinha JS Game!!');
-
 // Links de referencia do projeto para sortear numeros aleatorio-> https://github.com/alura-cursos/logica-js
-
 class Game {
 	// atributos
 	nomeJogador;
@@ -10,10 +8,10 @@ class Game {
 	//metodo contructor
 	constructor(nomeJogador) {
 		this.nomeJogador = nomeJogador;
-		// https://devfuria.com.br/javascript/numeros-aleatorios/
+		// Sorteio de numero aleatorios em JS-> https://devfuria.com.br/javascript/numeros-aleatorios/
 		this.numeroSorte = Math.floor(Math.random() * 10 + 1);
 	}
-	// metodos da class
+	// metodos da classe
 	startGame() {
 		this.nomeJogador = this.getNomeJogador();
 		let numeroSorteMaquina = this.soteiaNumero;
@@ -59,6 +57,7 @@ class Game {
 		return this.numeroSorte;
 	}
 }
-
+// instancia da classe
 const player1 = new Game("player1");
+// invoca metodo
 player1.startGame();
